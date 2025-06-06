@@ -1,11 +1,12 @@
 import React from 'react'
 import { useState } from 'react'
-
+import NavBar from './components/NavBar'
 
 function App() {
 
   return (
     <>
+      <NavBar/>
       <div className='min-h-screen flex flex-col items-center justify-start bg-gradient-to-b from-blue-700 to-green-200 px-4 py-12 pt-120'>
         {/*Title*/}
         <h1 className='text-4xl md:text-5xl font-bold text-white text-center mb-10 tracking-tight'>Custom Music Visualizer</h1>

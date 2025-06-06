@@ -1,24 +1,22 @@
 import React from 'react'
 import { useState } from 'react'
-
+import NavBar from '../components/NavBar'
 
 function Customizer() {
 
+ 
   return (
     <>
-      {/*Title*/}
-      <h1 className='flex justify-center mt-8 text-6xl'>Custom Music Visualizer</h1>
+      <NavBar/>
+      <div className='min-h-screen flex flex-col items-center px-4 py-8 text-white bg-gradient-to-b from-indigo-500 to-indigo-400'>
+        {/* Header */}
+        <h1 className='text-4x1 md:text-5xl font-bold tracking-tight mb-8 mt-20'>Visualizer</h1>
+        
+        <div className='w-full lg:w-2/3 bg-black/30 backdrop-blur-md rounded-xl p-4 shadow-lg border border-white/10 flex items-center justify-center min-h-[200px] lg:min-h-[800px]'></div>        
 
 
-      {/*Customizer Panel*/}
-      <div className='flex'>
-        <form>
-          <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></input>
-        </form>
+
       </div>
-
-      {/*Visualizer*/}
-
 
     </>
   )
