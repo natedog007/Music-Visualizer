@@ -27,6 +27,9 @@ function NavBar() {
                 <Link to="/test" className="text-white/80 hover:text-white px-3 py-2 rounded-md text-nd font-medium transition-colors">
                   Test
                 </Link>
+                <Link to="/SignIn" className="text-white/80 hover:text-white px-3 py-2 rounded-md text-nd font-medium transition-colors">
+                  Sign In
+                </Link>
               </div>
             </nav>
           </div>
