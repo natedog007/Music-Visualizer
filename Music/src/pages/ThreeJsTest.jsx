@@ -1,6 +1,4 @@
-import React from 'react'
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Canvas } from "@react-three/fiber"
 import NavBar from '../components/NavBar'
 
 function ThreeJsTest() {
@@ -8,8 +6,14 @@ function ThreeJsTest() {
   return (
     <>
     <NavBar/>
-    <div className='text-white min-h-screen flex flex-col items-center justify start bg-gradient-to-b from-gray-500 to-gray-600 px-4 py-12 pt-120'>
-        <h1>ThreeJsTest</h1>
+    <div className="w-screen h-screen">
+        <Canvas camera={{ position: [2,2,2]}} className="bg-blue-400">
+          <mesh>
+            <sphereGeometry args={[2, 80, 80]}/>
+            <meshPhongMaterial color='green'/>
+            <directionalLight position={[2,5,1]}/>
+          </mesh>
+        </Canvas>
     </div>
 
     </>

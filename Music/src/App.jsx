@@ -3,11 +3,12 @@ import { useState } from 'react'
 import NavBar from './components/NavBar'
 import SongCard from './components/SongCard'
 
+
 function App() {
+
 
   return (
     <>
-      
       <NavBar/>
       <div className='min-h-screen flex flex-col items-center justify-start bg-gradient-to-b from-blue-400 to-green-300 px-4 py-12 pt-120'>
         {/*Title*/}
